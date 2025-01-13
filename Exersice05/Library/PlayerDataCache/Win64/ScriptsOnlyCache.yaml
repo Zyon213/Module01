@@ -15,6 +15,8 @@ ScriptsOnlyBuild:
     - GameOver
     - LeftRightElevator
     - MatchColorButton
+    - MoveWall
+    - OpenWall
     - PlayerController
     - RedElevatorController
     - RotatingBlade
@@ -50,6 +52,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraController
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraController
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraController
+    methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: CameraController
     methodName: ExitGame
@@ -97,17 +108,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3154}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 6612}
+    - Class: 114
+      Script: {instanceID: 6678}
+    - Class: 114
+      Script: {instanceID: 7046}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,23 +195,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4408}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 4794}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6616}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 8000}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 27466}
+      Script: {instanceID: 8008}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -265,23 +280,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3988}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 5814}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 6616}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 7268}
+      Script: {instanceID: 7276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -350,23 +365,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3898}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5570}
+      Script: {instanceID: 5572}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5660}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 7268}
+      Script: {instanceID: 7276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -435,23 +450,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3950}
     - Class: 114
-      Script: {instanceID: 5098}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5654}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 5896}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 7038}
+      Script: {instanceID: 7046}
     - Class: 114
-      Script: {instanceID: 7268}
+      Script: {instanceID: 7276}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -934,6 +949,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlueWallRaise
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
@@ -1114,6 +1135,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
@@ -1155,10 +1182,22 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 986e207d4a91b94c35996dda1c43f1fa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenWall
+  - hash:
+      serializedVersion: 2
       Hash: da78860b35385a916693f77891540988
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WallController
+  - hash:
+      serializedVersion: 2
+      Hash: 1d357a007e382a0e807567b3463293bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveWall
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1369,12 +1408,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlueWallRaise
   platform: 19
   scenePathNames:
   - Assets/Scenes/Stage1.unity
